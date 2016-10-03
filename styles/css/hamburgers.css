@@ -39,8 +39,8 @@
   top: 50%;
   margin-top: -2px; }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 40px;
-    height: 4px;
+    width: 30px;
+    height: 3px;
     background-color: black;
     border-radius: 4px;
     position: absolute;
@@ -53,9 +53,9 @@
     content: "";
     display: block; }
   .hamburger-inner::before {
-    top: -10px; }
+    top: -7px; }
   .hamburger-inner::after {
-    bottom: -10px; }
+    bottom: -7px; }
 
 /*
  * 3DX
