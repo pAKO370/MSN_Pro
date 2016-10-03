@@ -1,0 +1,1 @@
+!function(){var t=$(".hamburger");t.on("click",function(a){t.toggleClass("is-active"),$(".test").toggleClass("active")})}();

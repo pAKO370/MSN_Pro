@@ -1,0 +1,89 @@
+.wrapper {
+  overflow: hidden; }
+  .wrapper .header {
+    width: 100%;
+    position: relative; }
+    .wrapper .header .nav {
+      height: 60px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: white;
+      z-index: 9; }
+      .wrapper .header .nav #msn {
+        position: absolute;
+        max-height: 25px;
+        top: calc(50% - 12.5px);
+        left: 0;
+        z-index: 5;
+        margin-left: 10px; }
+      .wrapper .header .nav .hamburger {
+        position: absolute;
+        right: 0;
+        z-index: 10; }
+    .wrapper .header .test {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      margin-top: -350px;
+      background: RGBA(34, 34, 34, 1);
+      color: white;
+      z-index: 3;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 700;
+      transition: margin-top 500ms ease-in-out; }
+      .wrapper .header .test ul {
+        padding: 45px 0 10px 30px; }
+      .wrapper .header .test li {
+        height: 40px;
+        list-style: none;
+        text-align: left;
+        margin: 0;
+        font-size: 1.7rem;
+        font-weight: 900; }
+      .wrapper .header .test.active {
+        display: block;
+        margin-top: 50px; }
+    .wrapper .header .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2; }
+    .wrapper .header .header-imgs {
+      position: relative;
+      width: 1000px;
+      height: 100%;
+      min-height: 550px;
+      max-height: 550px;
+      z-index: -2;
+      left: calc(50% - 580px); }
+    .wrapper .header h1 {
+      position: absolute;
+      top: calc(70% - 50px);
+      z-index: 3;
+      color: white;
+      width: 100%;
+      text-align: center;
+      font-size: 4rem;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 800;
+      text-transform: uppercase; }
+      .wrapper .header h1 span {
+        color: RGBA(233, 64, 55, 1);
+        font-size: 3rem;
+        font-weight: 400; }
+
+@media only screen and (min-width: 500px) {
+  .header-imgs {
+    position: relative;
+    width: 1500px;
+    height: 100%;
+    min-height: 900px;
+    max-height: 900px;
+    z-index: -2;
+    left: 50%;
+    transform: translateX(-50%); } }
