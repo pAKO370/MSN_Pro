@@ -96,10 +96,10 @@ html, body {
         z-index: 2; }
       html .wrapper .header .header-imgs, body .wrapper .header .header-imgs {
         position: relative;
-        width: 1200px;
+        width: 1500px;
         height: calc(100vh + 350px);
         z-index: -2;
-        left: calc(50% - 700px);
+        left: calc(50% - 870px);
         margin-top: -200px; }
       html .wrapper .header h1, body .wrapper .header h1 {
         position: absolute;
