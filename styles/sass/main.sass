@@ -1,134 +1,182 @@
-.wrapper
-	overflow: hidden
-	.header
-		width: 100%
-		position: relative
-		.nav
-			height: 60px
+html, body
+	width: 100%
+	height: 100%
+	.wrapper
+		overflow: hidden
+		//height: 1000px
+		.header
 			width: 100%
-			position: fixed
+			overflow: hidden
+			position: relative
+			//background: blue
 			top: 0
-			left: 0
-			background: white
-			z-index: 9
-			#msn
+			height: calc(100vh)
+			.nav
+				height: 60px
+				width: 100vw
 				position: absolute
-				max-height: 25px
-				top: calc(50% - 12.5px)
+				top: 0
 				left: 0
-				z-index: 5
-				margin-left: 10px
-			.hamburger
+				background: white
+				z-index: 9
+				#msn
+					position: absolute
+					max-height: 25px
+					top: calc(50% - 12.5px)
+					left: 0
+					z-index: 5
+					margin-left: 10px
+				.hamburger
+					position: absolute
+					right: 0
+					top: 4px
+					z-index: 10
+			.test
+				position: relative
+				width: 100%
+				height: auto
+				margin-top: -350px
+				background: RGBA(34, 34, 34, 1.00)
+				color: white
+				z-index: 3
+				font-family: 'Source Sans Pro', sans-serif
+				font-weight: 700
+				transition: margin-top 500ms ease-in-out 
+				//overflow: hidden
+				//display: none
+				ul
+					padding: 45px 0 10px 0px
+				li
+					position: relative
+					height: 40px
+					list-style: none
+					text-align: left
+					margin: 0
+					font-size: 1.7rem
+					font-weight: 900
+					padding-left: 30px
+					.arrow-down
+						position: absolute
+						top: -19px
+						right: 30px
+						font-size: 3rem
+						transform: rotate(180deg)
+				&.active
+					display: block
+					margin-top: 50px
+				.about-li
+					background: black
+					padding: 0
+					transition: color 200ms ease-in
+					transform-origin: top
+					transform: scale(0)
+					color: black
+					height: 0
+					&.show-li
+						padding: 10px 0 8px 65px
+						transform: scale(1)
+						height: auto
+						color: white
+				.coach-li
+					background: black
+					padding: 0
+					transition: color 200ms ease-in
+					transform-origin: top
+					transform: scale(0)
+					color: black
+					height: 0
+					&.show-li
+						padding: 8px 0 7px 65px
+						transform: scale(1)
+						height: auto
+						color: white
+			.overlay
+				background: 
+					color: rgba(0,0,0,.6)
 				position: absolute
-				right: 0
-				top: 4px
-				z-index: 10
-		.test
+				top: 0
+				left: 0
+				width: 100%
+				height: calc(100vh)
+				z-index: 2
+			.header-imgs
+				position: relative
+				width: 1200px
+				height: calc(100vh + 350px)
+				z-index: -2
+				left: calc(50% - 700px)
+				margin-top: -200px
+				//transform: translateX(-50%)
+			h1
+				position: absolute
+				top: calc(50% - 0px)
+				z-index: 2
+				color: white
+				width: 100%
+				text-align: center
+				font-size: 4rem
+				font-family: 'Source Sans Pro', sans-serif
+				font-weight: 800
+				//text-decoration: underline
+				text-transform: uppercase
+				span
+					color: RGBA(233, 64, 55, 1.00)
+					font-size: 3rem
+					font-weight: 400
+
+		.info
+			//display: none
+			z-index: 1
 			position: relative
 			width: 100%
-			height: 400px
-			margin-top: -350px
-			background: RGBA(34, 34, 34, 1.00)
-			color: white
-			z-index: 3
-			font-family: 'Source Sans Pro', sans-serif
-			font-weight: 700
-			transition: margin-top 500ms ease-in-out 
-			overflow: hidden
-			//display: none
-			ul
-				padding: 45px 0 10px 0px
-			li
-				position: relative
-				height: 40px
-				list-style: none
-				text-align: left
-				margin: 0
-				font-size: 1.7rem
-				font-weight: 900
-				padding-left: 30px
-				.arrow-down
-					position: absolute
-					top: -19px
-					right: 30px
-					font-size: 3rem
-					transform: rotate(180deg)
-			&.active
-				display: block
-				margin-top: 50px
-			.about-li
-				background: black
-				padding: 0
-				transition: color 200ms ease-in
-				transform-origin: top
-				transform: scale(0)
-				color: black
-				height: 0
-				&.show-li
-					padding: 10px 0 8px 65px
-					transform: scale(1)
-					height: auto
-					color: white
-			.coach-li
-				background: black
-				padding: 0
-				transition: color 200ms ease-in
-				transform-origin: top
-				transform: scale(0)
-				color: black
-				height: 0
-				&.show-li
-					padding: 8px 0 7px 65px
-					transform: scale(1)
-					height: auto
-					color: white
-		.overlay
-			background: 
-				color: rgba(0,0,0,.6)
-			position: absolute
-			top: 0
-			left: 0
-			width: 100%
-			height: 100%
-			z-index: 2
+			padding: 70px 5px 50px 5px
+			img
+				position: absolute
+				height: 200px
+				width: 400px
+				left: 50%
+				transform: translateX(-50%)
+				opacity: .1
+				z-index: -2
+			p
+				font-size: 2.2rem
+				z-index: 12
+				color: RGBA(36, 45, 53, 1.00)
+				font-family: 'Raleway', sans-serif
+				font-weight: 400
+				padding: 40px 10px
+		.image-info
+			.center
+				.image
+					width: 100vh
+					img
+						width: 100vh
+				.info-sec
+					background: RGBA(255, 250, 237, 1.00)
+					padding: 50px 5px
+					h3
+						font-size: 2.5rem
+						z-index: 12
+						color: RGBA(36, 45, 53, 1.00)
+						font-family: 'Source Sans Pro', sans-serif
+						font-weight: 600	
+						margin-top: 0
+						text-align: center
+					p
+						font-size: 2.2rem
+						z-index: 12
+						color: RGBA(36, 45, 53, 1.00)
+						font-family: 'Raleway', sans-serif
+						font-weight: 400
+						padding: 10px 20px
+	@media only screen and (min-width: 500px)
+
 		.header-imgs
 			position: relative
-			width: 1000px
+			width: 1500px
 			height: 100%
-			min-height: 550px
-			max-height: 550px
+			min-height: 900px
+			max-height: 900px
 			z-index: -2
-			left: calc(50% - 580px)
-			//margin-top: 50px
-			//transform: translateX(-50%)
-		h1
-			position: absolute
-			top: calc(70% - 50px)
-			z-index: 3
-			color: white
-			width: 100%
-			text-align: center
-			font-size: 4rem
-			font-family: 'Source Sans Pro', sans-serif
-			font-weight: 800
-			//text-decoration: underline
-			text-transform: uppercase
-			span
-				color: RGBA(233, 64, 55, 1.00)
-				font-size: 3rem
-				font-weight: 400
-
-
-	
-	
-@media only screen and (min-width: 500px)
-	
-	.header-imgs
-		position: relative
-		width: 1500px
-		height: 100%
-		min-height: 900px
-		max-height: 900px
-		z-index: -2
-		left: 50%
-		transform: translateX(-50%)
+			left: 50%
+			transform: translateX(-50%)
