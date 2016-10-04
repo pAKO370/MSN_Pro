@@ -1,1 +1,1 @@
-!function(){var t=$(".hamburger");t.on("click",function(a){t.toggleClass("is-active"),$(".test").toggleClass("active")})}();
+!function(){var o=$(".hamburger");o.on("click",function(c){o.toggleClass("is-active"),$(".test").toggleClass("active")}),$(".about-arrow").on("click",function(){$(".about-li").toggleClass("show-li")}),$(".coaching-arrow").on("click",function(){$(".coach-li").toggleClass("show-li")})}();

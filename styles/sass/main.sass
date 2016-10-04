@@ -21,6 +21,7 @@
 			.hamburger
 				position: absolute
 				right: 0
+				top: 4px
 				z-index: 10
 		.test
 			position: relative
@@ -33,19 +34,54 @@
 			font-family: 'Source Sans Pro', sans-serif
 			font-weight: 700
 			transition: margin-top 500ms ease-in-out 
+			overflow: hidden
 			//display: none
 			ul
-				padding: 45px 0 10px 30px
+				padding: 45px 0 10px 0px
 			li
+				position: relative
 				height: 40px
 				list-style: none
 				text-align: left
 				margin: 0
 				font-size: 1.7rem
 				font-weight: 900
+				padding-left: 30px
+				.arrow-down
+					position: absolute
+					top: -19px
+					right: 30px
+					font-size: 3rem
+					transform: rotate(180deg)
 			&.active
 				display: block
 				margin-top: 50px
+			.about-li
+				background: black
+				padding: 0
+				transition: color 200ms ease-in
+				transform-origin: top
+				transform: scale(0)
+				color: black
+				height: 0
+				&.show-li
+					padding: 10px 0 8px 65px
+					transform: scale(1)
+					height: auto
+					color: white
+			.coach-li
+				background: black
+				padding: 0
+				transition: color 200ms ease-in
+				transform-origin: top
+				transform: scale(0)
+				color: black
+				height: 0
+				&.show-li
+					padding: 8px 0 7px 65px
+					transform: scale(1)
+					height: auto
+					color: white
 		.overlay
 			background: 
 				color: rgba(0,0,0,.6)
